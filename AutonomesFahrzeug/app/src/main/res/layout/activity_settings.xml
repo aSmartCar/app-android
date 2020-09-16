@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.autonomesfahrzeug.CustomScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySettings">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!--
+        <TextView
+            android:id="@+id/anweisung_googleDrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Erstellen Sie von dieser Datei eine Kopie in Ihrer Google Drive Ablage" />
+
+        <TextView
+            android:id="@+id/neuronalesNetz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="https://drive.google.com/file/d/1xpILvnNnOeT0XmWEMeUuX96oyREmGqBp/view?usp=sharing" />
+        -->
+<!--
+        <TextView
+            android:id="@+id/textView_WifiÜberschrift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/WifiÜberschrift"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch_manageWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Der Applikation erlauben zwischen dem Access-Point des Fahrzeug und dem Wifi des Sftp-Servers zu wechseln."
+            android:textColor="@android:color/secondary_text_light" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wifiSsid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Server SSID"
+                android:inputType="text"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wifiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Server SSID-Passwort"
+                android:inputType="text|textPassword"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/accessPointSsid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Board SSID"
+                android:inputType="text"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/accessPointPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Board SSID-Passwort"
+                android:inputType="text|textPassword"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switchWpa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WPA 2" />
+
+            <Switch
+                android:id="@+id/switchWpa3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WPA 3" />
+        </LinearLayout>
+-->
+
+        <TextView
+            android:id="@+id/textView_TCPÜberschrift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/sftpTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--
+        <TextView
+            android:id="@+id/udp_uebertragung"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Angaben für die UDP-Verbindung zwischen Smartphone und Board"/>
+        -->
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/serverUser"
+                android:inputType="text"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/serverPassword"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/serverIp"
+                android:inputType="text"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/serverPort"
+                android:inputType="number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView_connectionServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nnTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch_standardDirs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use the standard directory to download neuronal network from the sftp server"
+            tools:checked="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whichNnDownload" />
+
+        <Spinner
+            android:id="@+id/serverNnSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/neuronalNetworkPathEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/neuronalNetworkPath"
+                android:inputType="text"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonDownloadNn"
+            android:text="@string/nnDownload" />
+
+        <TextView
+            android:id="@+id/textView_neuronaleNetze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/whichNn" />
+
+        <Spinner
+            android:id="@+id/spinner_neuronaleNetze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/neuronalesNetzLöschen"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="deleteNeuronalesNetz"
+            android:text="@string/nnDelete"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datasetsTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_trainingsdaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/trainigsdatenHochladen"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="buttonUploadDataset"
+            android:text="@string/datasetsUpload"/>
+
+        <Button
+            android:id="@+id/trainigsdatenLöschen"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="deleteChosenDataset"
+            android:text="@string/datasetDelete"/>
+
+        <TextView
+            android:id="@+id/notebookTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notebookTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/uploadNotebookButton"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="uploadIpynbSftp"
+            android:text="@string/uploadNotebook" />
+
+
+        <TextView
+            android:id="@+id/textView_UDPÜberschrift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/udpTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--
+        <TextView
+            android:id="@+id/udp_uebertragung"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Angaben für die UDP-Verbindung zwischen Smartphone und Board"/>
+        -->
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/boardPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/boardPort" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/appPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/smartphonePort" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ipAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/boardIp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView_KameraÜberschrift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cameraTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whichCamera" />
+
+        <Spinner
+            android:id="@+id/spinner_kameraAuswahl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_WieOftBilder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/framerateChoose" />
+
+        <Spinner
+            android:id="@+id/spinnerFramerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/textView_aufloesung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="@string/resolutionChoose" />
+
+        <Spinner
+            android:id="@+id/spinner_aufloesung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textView_bildbereich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="@string/cameraCaptureArea"
+            tools:text="@string/cameraCaptureArea" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="240dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:foregroundGravity="clip_horizontal"
+                app:srcCompat="@android:color/transparent" />
+
+            <TextureView
+                android:id="@+id/textureView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextureView>
+
+            <FrameLayout
+                android:id="@+id/bildbereichFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imageView_Bildbereich"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/imageView_lo"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/imageView_lu"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                app:srcCompat="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imageView_ru"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imageView_ro"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@color/colorPrimary" />
+        </RelativeLayout>
+
+
+        <!--
+        <Button
+            android:id="@+id/button_Bildbereich"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Bildbereich_Button" />
+-->
+
+        <TextView
+            android:id="@+id/textView_BIldbereich_Auflösung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="TextView" />
+ <!--
+        <TextView
+            android:id="@+id/textView_Bildbereich_Speicherplatz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView" />
+
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:minWidth="50dip"
+            android:maxHeight="20dip"
+            android:onClick="infoButtonGedrückt"
+            android:text="Info Speicherverbrauch"
+            android:textSize="12sp" />
+ -->
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/controlTitle"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_steuerung"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/controller_xbox" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSaveSettingsOnSftpServerDialog"
+            android:text="@string/saveSettings" />
+
+        <TextView
+            android:id="@+id/textViewLoadSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loadSettingsTextView" />
+
+        <Spinner
+            android:id="@+id/spinnerLoadSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonLoadSettings"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loadSettingsButton" />
+
+
+    </LinearLayout>
+
+
+
+</com.example.autonomesfahrzeug.CustomScrollView>

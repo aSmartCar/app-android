@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityAutoMode">
+
+    <Switch
+        android:id="@+id/switch_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calibrationPicture" />
+
+    <TextView
+        android:id="@+id/textView_connectedWithCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notConnectedESP" />
+
+    <TextView
+        android:id="@+id/textView_bilder_die_sekunde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/picturesTaken" />
+
+    <TextView
+        android:id="@+id/lenseNameAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lenseName" />
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="40dp">
+
+
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+             />
+
+        <ImageView
+            android:id="@+id/imageView_calibrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="255">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_geschwindigkeit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/throttle"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_Lenkwinkel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/steering"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_lenkrichtung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/steeringDirection"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonStartStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_start_text"
+            style="@style/btn_style"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
